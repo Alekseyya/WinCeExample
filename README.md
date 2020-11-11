@@ -3,7 +3,7 @@ This .NET CF 3.5 / C# Windows CE / Windows Mobile 6.5 example application and se
 
 Этот проект  показывает мою боль и страдания. Сэкономлю время тем людям, кто захочет разработать приложение на .net compact 3.5.
 
-1. Понадобится : Visual Studio 2008 team system. Windows Server 2008 R2 или Windows 7. 
+Понадобится : Visual Studio 2008 team system. Windows Server 2008 R2 или Windows 7. 
 В Windows Serrver 2008 r2 установить поддержку .net compact framawokr 3.5. (.Net framework 3.5.1 Features)
 Virtual PC 2007. https://www.microsoft.com/en-us/download/details.aspx?id=4580
 Windows ce 6 plantform sdk
@@ -12,12 +12,13 @@ https://www.microsoft.com/en-us/download/details.aspx?id=6135
 Для удобства использование и написания тестов.
 Resharper версии 7. Я использовал 7.1.3000. В случае с решарпером, можно писать тесты на NUnit. MsTest - это полная дичь, я так считаю.
 
-5. Использование SQLite3
+Использование SQLite3
 https://www.sqlitetutorial.net/download-install-sqlite/
 Установить ide sqliteStudio
 https://github.com/pawelsalawa/sqlitestudio
 Самое главное скачать версию SQLite-1.0.66.0. Добавить в Reference System.data.SQLLite и в корень проекта SQLite.Interop.066.DLL,
 именно в корень, для того чтобы файл попал в сборку. Установить в проекте для SQLite.Interop.066.DLL - Properties - Build "Content" и Copy to Output Directory "Copy if newer".
+Созданный бд файл .sqllite так же надо прикрепить к проекту, как это сделал  в прошлом предложении.
 
 Установка сторонних dll.
 Скачать из nuget библиотеку, найти там папку netCF35(если такая имеется), перебросить в папку Packages папку с библиотекой.
